@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiTemplate.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:MauiTemplate.Components">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="dotnet_bot.png" />
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="MAUI Template" />
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="Include 3'rd party:" />
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level3"
+                Text="CommunityToolkit.Maui, CommunityToolkit.Mvvm, LiteDB" />
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                Text="And a easy font icon support" />
+            <Button
+                x:Name="CounterBtn"
+                Clicked="OnShowDemoClicked"
+                HorizontalOptions="Center"
+                Text="Show demo" />
+            <HorizontalStackLayout
+                x:Name="IconDemo"
+                HorizontalOptions="Center"
+                IsVisible="False">
+                <c:Icon
+                    IconColor="Cyan"
+                    IconSize="Huge"
+                    Symbol="AlphaNBox" />
+                <c:Icon IconSize="Large" Symbol="AlphaABoxOutline" />
+                <c:Icon
+                    FontAttributes="Italic"
+                    IconSize="Large"
+                    Symbol="AlphaU" />
+                <c:Icon
+                    FontAttributes="Italic"
+                    IconSize="Medium"
+                    Symbol="AlphaK" />
+                <c:Icon
+                    FontAttributes="Italic"
+                    IconSize="Small"
+                    Symbol="AlphaR" />
+                <c:Icon
+                    FontAttributes="Italic"
+                    IconSize="Tiny"
+                    Symbol="AlphaI" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
